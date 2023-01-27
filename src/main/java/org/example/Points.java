@@ -2,7 +2,7 @@ package org.example;
 import java.util.*;
 import java.util.logging.*;
 
-class Coordi implements Cloneable{
+class Coordi {
     String x1;
     String y1;
     Coordi(String x1,String y1){
