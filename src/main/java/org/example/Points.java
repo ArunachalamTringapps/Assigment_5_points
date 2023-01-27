@@ -34,7 +34,5 @@ public class Points {
         String y2=sc.nextLine();
         Coordi c2=c1.clonePoint();
         l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2,y2));
-
-
     }
 }
