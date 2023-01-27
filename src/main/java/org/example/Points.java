@@ -33,7 +33,6 @@ public class Points {
         l.info("Enter the co-ordinates Y to check: ");
         String y2=sc.nextLine();
         Coordi c2=(Coordi)c1.clone();
-        l.info("The result is: "+c2.equalling(x2,y2));
         l.log(Level.INFO, () -> "Something went wrong: " + c2.equalling(x2,y2));
 
 
