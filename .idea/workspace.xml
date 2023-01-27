@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d295ca34-fc12-491a-b027-8501009547b7" name="Changes" comment="inital comment">
+    <list default="true" id="d295ca34-fc12-491a-b027-8501009547b7" name="Changes" comment="inital commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Points.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Points.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,11 +125,19 @@
       <option name="project" value="LOCAL" />
       <updated>1674815578964</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="inital commit">
+      <created>1674815705718</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674815705718</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital comment" />
+    <MESSAGE value="inital commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
   </component>
 </project>

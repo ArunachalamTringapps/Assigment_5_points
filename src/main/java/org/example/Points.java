@@ -2,13 +2,14 @@ package org.example;
 import java.util.*;
 import java.util.logging.*;
 
-class Coordi implements Cloneable{
+class Coordi implements Cloneable {
     String x1;
     String y1;
     Coordi(String x1,String y1){
         this.x1=x1;
         this.y1=y1;
     }
+
     public boolean equalling(String x2, String y2){
         return x1.equals(x2) && y1.equals(y2);
     }
