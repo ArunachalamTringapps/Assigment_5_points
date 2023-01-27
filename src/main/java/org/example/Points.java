@@ -19,7 +19,6 @@ class Coordi implements Cloneable {
         return x1.equals(x2) && y1.equals(y2);
     }
 
-
 }
 public class Points {
     public static void main(String[] args)throws CloneNotSupportedException  {
