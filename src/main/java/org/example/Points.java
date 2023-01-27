@@ -13,10 +13,9 @@ class Coordi implements Cloneable{
         return x1.equals(x2) && y1.equals(y2);
     }
 
-    Coordi clonePoint() throws CloneNotSupportedException {
-        return (Coordi) super.clone();
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
-
 }
 public class Points {
     public static void main(String[] args)throws CloneNotSupportedException  {
@@ -32,7 +31,7 @@ public class Points {
         String x2=sc.nextLine();
         l.info("Enter the co-ordinates Y to check: ");
         String y2=sc.nextLine();
-        Coordi c2=c1.clonePoint();
+        Coordi c2=(Coordi) c1.clone();
         l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2,y2));
     }
 }
