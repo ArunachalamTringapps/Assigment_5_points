@@ -16,11 +16,7 @@ class Coordi implements Cloneable{
     Coordi clonePoint() throws CloneNotSupportedException {
         return (Coordi) super.clone();
     }
-//    public Object clone() throws CloneNotSupportedException{
-//        super.clone();
-//        //...
-//        return null;
-//    }
+
 }
 public class Points {
     public static void main(String[] args)throws CloneNotSupportedException  {
