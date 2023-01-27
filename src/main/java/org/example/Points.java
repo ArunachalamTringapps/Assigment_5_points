@@ -9,7 +9,7 @@ class Coordi implements Cloneable{
         this.x1=x1;
         this.y1=y1;
     }
-    public boolean equal(String x2, String y2){
+    public boolean equalling(String x2, String y2){
         return x1.equals(x2) && y1.equals(y2);
     }
 
@@ -33,7 +33,8 @@ public class Points {
         l.info("Enter the co-ordinates Y to check: ");
         String y2=sc.nextLine();
         Coordi c2=(Coordi)c1.clone();
-        l.info("The result is: "+c2.equal(x2,y2));
+        l.info("The result is: "+c2.equalling(x2,y2));
+        l.log(Level.INFO, () -> "Something went wrong: " + c2.equalling(x2,y2));
 
 
     }
