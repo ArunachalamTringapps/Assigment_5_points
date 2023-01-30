@@ -2,24 +2,22 @@ package org.example;
 import java.util.*;
 import java.util.logging.*;
 
-class Coordi implements Cloneable {
+class Coordi {
     int x1;
     int y1;
-    Logger l = Logger.getLogger("com.api.jar");
 
     Coordi(int x1,int y1){
         this.x1=x1;
         this.y1=y1;
     }
 
-    Coordi cloneexample(){
+    public Coordi cloneexample()  {
         try {
-            //call clone in object.
             return (Coordi) super.clone();
-        } catch (CloneNotSupportedException e) {
-            l.info("Cloning not allowed");
+        }catch (Exception ex){
             return this;
         }
+
     }
 
     public boolean equalling(int x2, int y2){
