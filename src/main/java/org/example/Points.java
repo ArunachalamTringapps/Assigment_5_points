@@ -25,20 +25,25 @@ class Coordi implements Cloneable {
 
 }
 public class Points {
-    public static void main(String[] args)throws Exception  {
+    public static void main(String[] args)  {
         Scanner sc=new Scanner(System.in);
         Logger l = Logger.getLogger("com.api.jar");
         l.info("Welcome guys");
         l.info("Enter the co-ordinates X: ");
-        int x1=sc.nextInt();
-        l.info("Enter the co-ordinates Y: ");
-        int y1=sc.nextInt();
-        Coordi c1=new Coordi(x1,y1);
-        l.info("Enter the co-ordinate X to check:");
-        int x2=sc.nextInt();
-        l.info("Enter the co-ordinates Y to check: ");
-        int y2=sc.nextInt();
-        Coordi c2=(Coordi) c1.clone();
-        l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2,y2));
+        try {
+            int x1 = sc.nextInt();
+            l.info("Enter the co-ordinates Y: ");
+            int y1 = sc.nextInt();
+            Coordi c1 = new Coordi(x1, y1);
+            l.info("Enter the co-ordinate X to check:");
+            int x2 = sc.nextInt();
+            l.info("Enter the co-ordinates Y to check: ");
+            int y2 = sc.nextInt();
+            Coordi c2 = (Coordi) c1.clone();
+            l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2, y2));
+        }catch (Exception ex){
+            l.log(Level.INFO, () -> "Error occur: " + ex);
+
+        }
     }
 }
