@@ -5,14 +5,25 @@ import java.util.logging.*;
 class Coordi implements Cloneable {
     int x1;
     int y1;
+    Logger l = Logger.getLogger("com.api.jar");
+
     Coordi(int x1,int y1){
         this.x1=x1;
         this.y1=y1;
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+//    @Override
+//    protected Object clone() throws CloneNotSupportedException {
+//        return super.clone();
+//    }
+    Coordi cloneexample(){
+        try {
+            //call clone in object.
+            return (Coordi) super.clone();
+        } catch (CloneNotSupportedException e) {
+            l.info("Cloning not allowed");
+            return this;
+        }
     }
 
     public boolean equalling(int x2, int y2){
@@ -39,7 +50,7 @@ public class Points {
             int x2 = sc.nextInt();
             l.info("Enter the co-ordinates Y to check: ");
             int y2 = sc.nextInt();
-            Coordi c2 = (Coordi) c1.clone();
+            Coordi c2 = c1.cloneexample();
             l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2, y2));
         }catch (Exception ex){
             l.log(Level.INFO, () -> "Error occur: " + ex);
