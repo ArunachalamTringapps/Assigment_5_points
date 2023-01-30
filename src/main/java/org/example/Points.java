@@ -11,8 +11,8 @@ class Coordi implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Coordi clone() throws CloneNotSupportedException {
+        return (Coordi) super.clone();
     }
 
     public boolean equalling(int x2, int y2){
@@ -38,7 +38,7 @@ public class Points {
         int x2=sc.nextInt();
         l.info("Enter the co-ordinates Y to check: ");
         int y2=sc.nextInt();
-        Coordi c2=(Coordi) c1.clone();
+        Coordi c2= c1.clone();
         l.log(Level.INFO, () -> "The result is: " + c2.equalling(x2,y2));
     }
 }
