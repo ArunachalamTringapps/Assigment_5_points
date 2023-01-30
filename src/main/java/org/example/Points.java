@@ -12,10 +12,6 @@ class Coordi implements Cloneable {
         this.y1=y1;
     }
 
-//    @Override
-//    protected Object clone() throws CloneNotSupportedException {
-//        return super.clone();
-//    }
     Coordi cloneexample(){
         try {
             //call clone in object.
